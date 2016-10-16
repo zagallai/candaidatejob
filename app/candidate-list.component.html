@@ -1,0 +1,26 @@
+<div>
+  <table class="table">
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>Candidate Name</th>
+            <th>Candidate Score</th>
+            <th></th>
+        </tr>
+      </thead>
+      <tr ng-repeat="candidate in model.candidates">
+          <td>{{candidate.name}}</td>
+          <td>{{candidate.score}}</td>
+          <td>
+              <div class="btn-group">
+                  <button class="btn btn-default" ng-click="model.add()">
+                      <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                  <button class="btn btn-default" ng-click="model.remove($index)">
+                      <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+              </div>
+          </td>
+      </tr>
+  </table>
+</div>

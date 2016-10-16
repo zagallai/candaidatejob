@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="candidateJob">
+  <head>
+    <meta charset="utf-8">
+    <title>Candidate Job</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="node_modules/bootstrap/dist/js/bootstrap.min.js">
+  </head>
+  <body ng-cloak>
+
+      <nav class="navbar navbar-default navbar-inverse" class="container-fluid">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Manage Candidate Job</a>
+              </div>
+          </div>
+      </nav>
+
+      <div class="container">
+
+          <candidate-list></candidate-list>
+
+      </div>
+
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/candidate-list.component.js"></script>
+  </body>
+</html>
